@@ -9,6 +9,12 @@ API_KEY = '0b27a94ce84af2198e74f61045430715'
 BASE_POSTER_URL = "https://image.tmdb.org/t/p/w500/"
 DEFAULT_POSTER = "https://via.placeholder.com/500x750.png?text=Poster+Not+Available"
 
+def configure_page():
+    st.set_page_config(
+        page_title="Movie Recommendation",
+        page_icon="🎬",
+        layout="wide"
+    )
 
 
 @st.cache_data
